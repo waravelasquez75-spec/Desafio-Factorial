@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 ¡Súper Combinaciones Mágicas! 🎲</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎉 ¡SÚPER COMBINACIONES MÁGICAS! 🎲</h1>
+      <p class="subtitle">¡Ayuda a los animalitos a calcular cuántas formas hay de ganar el gran sorteo!</p>
+    </header>
+
+    <div class="groups-container">
+      <!-- Grupo 1 -->
+      <div class="group-card">
+        <h2>🔴 Grupo 1 - Bolitas Rojas 🐰</h2>
+        <div class="input-group">
+          <label>Total de bolitas</label>
+          <input type="number" id="n1" value="59" min="1">
+        </div>
+        <div class="input-group">
+          <label>¿Cuántas elegir?</label>
+          <input type="number" id="r1" value="5" min="1">
+        </div>
+        <div class="result-small" id="result1">C(59,5) = <span>0</span></div>
+      </div>
+
+      <!-- Grupo 2 -->
+      <div class="group-card">
+        <h2>🔵 Grupo 2 - Bola Dorada ⭐</h2>
+        <div class="input-group">
+          <label>Total de bolitas</label>
+          <input type="number" id="n2" value="35" min="1">
+        </div>
+        <div class="input-group">
+          <label>¿Cuántas elegir?</label>
+          <input type="number" id="r2" value="1" min="1">
+        </div>
+        <div class="result-small" id="result2">C(35,1) = <span>0</span></div>
+      </div>
+    </div>
+
+    <button class="calculate-btn" id="calculateBtn">
+      ✨ ¡CALCULAR AHORA! ✨
+    </button>
+
+    <div class="final-result" id="finalResult">
+      <h2>¡Mira cuántas combinaciones mágicas! 🌈</h2>
+      <div class="number" id="totalNumber">0</div>
+      <p class="explanation" id="explanation"></p>
+    </div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
